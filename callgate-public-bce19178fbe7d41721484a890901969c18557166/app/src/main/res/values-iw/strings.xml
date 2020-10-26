@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_maps">מפה</string>
+
+    <string name="app_name">Callgate</string>
+    <string name="title_activity_maps3">מפה</string>
+    <string name="turn_on_gps"> אנה הפעל מיקום</string>
+    <string name="turn_on_network"> אנה הפעל נתונים</string>
+    <string name="start_drive">התחל נסיעה</string>
+    <string name="gate_name">שם השער</string>
+    <string name="phone_number">מספר טלפון</string>
+    <string name="choose_contact">בחר איש קשר</string>
+    <string name="add">הוסף</string>
+    <string name="search_contact">חפש איש קשר</string>
+    <string name="stop">עצור</string>
+    <string name="searching_for_closed_gate">מחפש שערים קרובים</string>
+    <string name="night">לילה</string>
+    <string name="day">יום</string>
+    <string name="sunday">א\'\</string>
+    <string name="monday">ב\'\</string>
+    <string name="tuesday">ג\'\</string>
+    <string name="wednesday">ד\'\</string>
+    <string name="thursday">ה\'\</string>
+    <string name="friday">ו\'\</string>
+    <string name="saturday">ז\'\</string>
+
+    <string name="gate_open_in">נפתח ב:</string>
+    <string name="gate_close_in">נסגר ב:</string>
+    <string name="running_in_the_background">האפלקציה תרוץ ברקע</string>
+    <string name="delete">האם תרצה למחוק את: </string>
+    <string name="cancel">בטל</string>
+    <string name="ok">אוקי</string>
+    <string name="please_choose_name">אנה בחר שם</string>
+    <string name="choose_phone_number">אנה בחר מספר טלפון</string>
+    <string name="radius_set_to">הרדיוס הוגדר ל:</string>
+    <string name="click_on_map">אנה לחץ על המפה כדי להוסיף שער</string>
+    <string name="checkall">בחר הכל</string>
+    <string name="share">שתף</string>
+    <string name="save">שמור</string>
+    <string name="languate_title">שפה</string>
+    <string name ="background_massage">הודעת התחלת נסיעה</string>
+    <string name="user_preferences">העדפות משתמש</string>
+    <string name="back_grand_message_summorty_disable">לחץ על מנת לבטל את הודעת תחילת הנסיעה</string>
+    <string name="back_grand_message_summorty_enable">לחץ על מנת לאפשר את הודעת תחילת הנסיעה</string>
+    <string name="stop_Driving">עצור נסיעה</string>
+    <string name="other">אחר</string>
+
+    <string name="action_settings"> action settings</string>
+    <string name="register_devices">מכשירים רשומים</string>
+    <string name="paired_devices">מכשירים לא רשומים</string>
+    <string name="wating_for_car">מחכה לחיבר לבלוטוס</string>
+    <string name="radius">רדיוס:</string>
+    <string name="open24h">פתוח 24ש\'\</string>
+    <string name="close24h">סגור 24ש\'\</string>
+    <string name="closeAtDay">סג\'\ ביום</string>
+    <string name="closeAtNight">סג\'\ בלילה</string>
+    <string name="weekend_time">מתי השער סגור במהלך הסופ"ש?</string>
+    <string name="week_days">מתי השער סגור במהלך השבוע?</string>
+    <string name="configure_time">הגדר זמנים</string>
+    <string name="click_here">לחץ פה</string>
+    <string name="gate_open_at">נפתח ב: </string>
+    <string name="choose_gate_mode" > אנה בחר מצב שער</string>
+    <string name="choose_open_time" > אנה הגדר שעת פתיחה</string>
+    <string name="choose_closing_time" >אנה הגדר שעת סגירה</string>
+    <string name="choose_time" >אנה בחר שעה</string>
+    <string name="SignBluetoothDevice">אנה בחר את מכשיר הבלוטוס של הרכב שלך</string>
+    <string name="turn_on_bluetoth">אנה הפעל את הבלוטוס</string>
+    <string name="dont_have_bluetooth">אין לי בלוטוס </string>
+
+    <string name="gate_close_at">נסגר ב: </string>
+    <string name="waiting_for_gate">כל השערים פתוחים, ממתין לשער סגור בשעה:</string>
+    <string name="settings">הגדרות</string>
+    <string name="bluetooth">בלוטוס</string>
+    <string name="main">ראשי</string>
+    <string name="update">עדכן</string>
+
+    <string name="delete_big_letters">מחק</string>
+    <string name="item_removed">פריט אחד נמחק</string>
+    <string name="undo">undo</string>
+    <string name="automating_is_the_future">אוטומציה היא העתיד</string>
+    <string name="my_gates">השערים שלי</string>
+    <string name="next">הבא</string>
+    <string name="share_failed">שיטוף נחשל, נסה שנית</string>
+    <string name="time_configuration">הגדרת זמנים</string>
+    <string name="later">אחר כך</string>
+    <string name="take_me_to_settings">כך אותי להגדרות</string>
+    <string name="inoreder_to_enable_that_permision_click_on_settings_and_and_click_on_permmisions_and_then_enable_popup_windows">כדי לאשר הרשאה זו יש להיכנס להגדרות ולאחר מכן להיכנס להרשאות ולאשר חלונות קופצים</string>
+    <string name="popup_permmisions_may_be_disabled">יכול להיות שיש אצלך הרשאה חסומה </string>
+    <string name="click_on_the_map_to_set_your_gate_location">לחץ על המפה על מנת להגדיר מיקום שער</string>
+
+</resources>

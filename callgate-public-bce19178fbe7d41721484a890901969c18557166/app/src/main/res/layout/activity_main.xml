@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:id="@+id/main_activity_layout"
+    tools:context=".activities.MainActivity">
+    <!--    android:layoutDirection="ltr"-->
+
+    <androidx.drawerlayout.widget.DrawerLayout
+       android:layout_width="match_parent"
+
+       android:layout_height="match_parent"
+       android:id="@+id/main_drawer_layout">
+
+
+
+    <include layout="@layout/drawer_layout"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+      >
+        <include layout="@layout/appbar" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_activity_gatelist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutAnimation="@anim/fall_down_anim_layout"
+                android:layout_weight="0.2"
+                tools:listitem="@layout/gate_list_item">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:backgroundTint="@color/darkgreen"
+                android:clickable="true"
+                android:onClick="ActionBarOnClick"
+                app:layout_constraintVertical_bias="0.39"
+                app:srcCompat="@drawable/ic_add_white_24dp"
+                app:tint="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingHorizontal="60dp"
+                >
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/main_activity_start_driving_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+
+                    android:backgroundTint="@color/darkgreen"
+                    android:onClick="ServiceButtonOnClick"
+                    android:text="@string/start_drive"
+                    android:textColor="@color/white"
+                    app:autoSizeMaxTextSize="40sp"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="none" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

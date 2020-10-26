@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrainedLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--
+            <TextView
+                android:id="@+id/add_gate_open_contacts_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:background="@drawable/round_search"
+                android:padding="15dp"
+                android:background="@drawable/round_search"
+
+                android:text="@string/choose_contact"
+                android:textSize="18sp" />
+
+    -->
+
+            <AutoCompleteTextView
+                android:id="@+id/add_gate_gate_name_editText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:drawableEnd="@drawable/edit_text_change_selection_drawables"
+                android:hint="@string/gate_name"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColorHint="@color/light_grey"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_gate_phone_number_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:outlineAmbientShadowColor="@color/gray"
+                android:outlineSpotShadowColor="@color/gray"
+                android:padding="15dp"
+                android:textColorHint="@color/light_grey"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/add_gate_gate_name_editText"
+                app:layout_constraintStart_toStartOf="@+id/add_gate_gate_name_editText"
+                app:layout_constraintTop_toBottomOf="@+id/add_gate_gate_name_editText" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/add_gate_phone_number_editText"
+                app:layout_constraintTop_toBottomOf="@+id/add_gate_phone_number_editText">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radius" />
+
+                <SeekBar
+                    android:id="@+id/map_seekbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_remove_gate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@null"
+                    android:onClick="removeGateButtonOnClick"
+                    app:srcCompat="@android:drawable/ic_menu_delete" />
+
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/maps_next_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="nextButtonOnClick"
+                android:padding="10dp"
+                android:text="@string/next"
+                android:textColor="@color/blacktint56"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintVertical_bias="0.046" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

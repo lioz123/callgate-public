@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#004c8c</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="colorButtonNormal">@color/darkgreen</item>
+
+
+    </style>
+    <style name="fast">
+        <item name="android:fontFamily">@font/halcion</item>
+    </style>
+    <style name="startAppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:background">@drawable/splash_screen</item>
+    </style>
+    <style name="myDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+    <style name="custom_app_bar" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+
+    </style>
+    <style name="round_button" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/cirlcle_add_button </item>
+    </style>
+</resources>

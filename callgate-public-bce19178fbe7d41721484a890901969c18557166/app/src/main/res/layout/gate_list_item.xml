@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginBottom="5dp"
+
+
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:orientation="horizontal"
+        android:layout_gravity="right|center_vertical"
+        android:gravity="right|center_vertical"
+        android:clickable="true"
+
+        android:padding="3dp"
+
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gate_list_item_background_card"
+            android:padding="10dp"
+            android:layout_marginTop="1dp"
+
+            android:layout_marginBottom="1dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorAccent"
+                android:id="@+id/background_layout"
+                android:clickable="true"
+
+                android:orientation="horizontal"
+                android:layout_gravity="end|center_vertical"
+                android:gravity="end|center_vertical"
+
+
+                android:layout_marginLeft="5dp"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete_big_letters"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/gate_list_adapter_delte_text"
+                    android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_delete_forever_white_24dp" />
+            </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:clickable="true"
+    android:id="@+id/foreground_layout"
+    android:layout_marginBottom="1dp"
+    android:layout_marginTop="1dp"
+    app:cardElevation="2dp"
+    android:elevation="4dp"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/gate_list_adapter_gate_name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1
+"
+                android:autoSizeMaxTextSize="40sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="sans-serif-light"
+
+                android:text="TextView"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="40sp"
+
+
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/gate_list_adapter_gatephone_textview"
+
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="40sp"
+                android:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeMaxTextSize="40sp"
+
+                android:textSize="20dp"
+                app:autoSizeStepGranularity="2sp"
+                android:layout_weight="1"
+                android:text="05566011111"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+
+            android:layout_weight="1"
+
+            android:gravity="end|center_vertical"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/gate_list_adapter_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_weight="2"
+               />
+
+            <Switch
+                android:id="@+id/gate_list_adapter_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginBottom="5dp"
+
+                android:layout_weight="2"
+
+         />
+
+            <ImageButton
+                android:id="@+id/gate_list_adatper_openMap_imageView"
+                android:layout_width="43dp"
+                android:layout_height="31dp"
+
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:cropToPadding="false"
+                android:scaleType="fitCenter"
+
+                app:srcCompat="@drawable/mapmarker" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>
+

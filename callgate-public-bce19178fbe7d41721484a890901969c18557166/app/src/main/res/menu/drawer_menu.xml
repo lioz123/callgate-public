@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item android:id="@+id/drawer_menu_main_activity"
+    android:title="@string/my_gates"
+        android:icon="@drawable/ic_add_location_black_24dp"
+    />
+    <item android:id="@+id/drawer_menu_bluetooth_acitivty"
+        android:title="@string/bluetooth"
+        android:icon="@drawable/ic_settings_bluetooth_black_24dp"
+        />
+    <item android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        />
+</group>
+    <item android:title="@string/other">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item android:id="@+id/drawer_menu_share_activity"
+                    android:title="@string/share"
+                    android:icon="@drawable/ic_share_black_24dp"
+                    />
+            </group>
+        </menu>
+
+    </item>
+</menu>

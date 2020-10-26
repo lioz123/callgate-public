@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:elevation="10dp"
+        android:outlineAmbientShadowColor="@android:color/background_dark"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gate_time_layout_title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/week_days"
+            android:layout_marginBottom="5dp"
+            android:textSize="22sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            >
+            <RadioButton
+                android:id="@+id/gate_time_layout_radio_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="locale"
+                android:maxWidth="10dp"
+                android:text="@string/closeAtNight"
+                android:textAlignment="center" />
+            <RadioButton
+                android:id="@+id/gate_time_layout_radio_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="locale"
+                android:maxWidth="10dp"
+                android:text="@string/closeAtDay"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/gate_time_layout_radio_openalltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxWidth="10dp"
+                android:layoutDirection="locale"
+                android:textAlignment="center"
+            android:text="@string/open24h" />
+
+            <RadioButton
+                android:id="@+id/gate_time_layout_radio_closealltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="locale"
+                android:maxWidth="10dp"
+                android:textAlignment="center"
+                android:text="@string/close24h" />
+
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_extanded_time_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/gate_close_at"
+                android:textSize="17sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/gate_time_layout_button_close_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/blacktint56"
+                android:backgroundTint="@color/white"
+                android:textSize="14sp"
+
+                android:layout_marginEnd="5dp"
+                android:text="@string/click_here" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/gate_open_at"
+                android:textSize="17sp"
+
+       />
+
+            <Button
+                android:id="@+id/gate_time_layout_button_open_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/blacktint56"
+                android:backgroundTint="@color/white"
+
+                android:text="@string/click_here" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/gate_time_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="1dp"
+                android:textSize="12dp"
+                android:padding="4dp"
+                android:background="@drawable/cirlcle_add_button"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:text="@string/sunday" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/gate_time_button_2"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="4dp"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="1dp"
+                android:padding="4dp"
+                style="@style/round_button"
+                android:textSize="12dp"
+
+                android:text="@string/monday" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/gate_time_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/cirlcle_add_button"
+                android:minHeight="1dp"
+
+                android:padding="4dp"
+                android:text="@string/tuesday"
+                android:textSize="12dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/gate_time_button_4"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/cirlcle_add_button"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="1dp"
+                android:padding="4dp"
+
+                android:textSize="12dp"
+
+                android:text="@string/wednesday" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/gate_time_button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="1dp"
+                android:padding="4dp"
+                android:background="@drawable/cirlcle_add_button"
+
+
+                android:textSize="12dp"
+                android:layout_marginRight="4dp"
+
+
+                android:text="@string/thursday" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/gate_time_button_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/cirlcle_add_button"
+
+                android:minHeight="10dp"
+                android:padding="4dp"
+                android:textSize="12dp"
+                android:text="@string/friday" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/gate_time_button_7"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="4dp"
+                android:padding="4dp"
+                android:background="@drawable/cirlcle_add_button"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="10dp"
+                android:textSize="12dp"
+
+                android:text="@string/saturday" />
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

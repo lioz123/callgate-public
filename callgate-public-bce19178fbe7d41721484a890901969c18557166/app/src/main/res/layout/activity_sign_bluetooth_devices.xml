@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.SignBluetoothDevices">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/main_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="72dp">
+
+        <include
+            layout="@layout/drawer_layout"
+            android:gravity="start" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/appbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/SignBluetoothDevice"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/include"
+                app:layout_constraintVertical_bias="0.026" />
+
+            <TextView
+                android:id="@+id/registered_devises"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/register_devices"
+                android:textColor="#046BBC"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+            <TextView
+                android:id="@+id/unsign_bluetooth_device_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="288dp"
+                android:text="@string/paired_devices"
+                android:textColor="#046BBC"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/divider2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/bluetooth_activity_signed_devices"
+                app:layout_constraintTop_toBottomOf="@+id/divider2"
+                app:layout_constraintVertical_bias="0.309" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bluetooth_activity_paired_devices"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layoutAnimation="@anim/fall_down_anim_layout"
+
+                android:layout_marginBottom="8dp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/unsign_bluetooth_device_textView"
+                app:layout_constraintStart_toStartOf="@+id/unsign_bluetooth_device_textView"
+                app:layout_constraintTop_toBottomOf="@+id/unsign_bluetooth_device_textView"
+                tools:listitem="@layout/bluetooth_item" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bluetooth_activity_signed_devices"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/divider2"
+                app:layout_constraintEnd_toEndOf="@+id/registered_devises"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/registered_devises"
+                app:layout_constraintTop_toBottomOf="@+id/registered_devises"
+                app:layout_constraintVertical_bias="0.0"
+                android:layoutAnimation="@anim/fall_down_anim_layout"
+
+                tools:listitem="@layout/bluetooth_item" />
+
+            <Button
+                android:id="@+id/sign_bluetooth_device_dont_have_bluetooth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:onClick="DontHaveDeviceButtonOnCLick"
+                android:text="@string/dont_have_bluetooth"
+                android:textSize="24dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/bluetooth_activity_paired_devices"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/bluetooth_activity_signed_devices"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/bluetooth_activity_signed_devices"
+                app:layout_constraintTop_toBottomOf="@+id/registered_devises"
+                app:layout_constraintVertical_bias="0.399" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
