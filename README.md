@@ -42,15 +42,3 @@ On Android versions prior to Android 6.0, wallabag requires the following permis
 - Phone calls
 - Readt\Write Contacts.
 
-
-## Features
-
-- Light/dark mode toggle
-- language support for hebrew\english
-- support for rtl\ltr
-- 
-- Cross platform
-
-
-# Hi, I'm Katherine! 👋
-
