@@ -49,7 +49,7 @@ width="200"
 
 [<img src="/images/maps activity.jpeg" align="left"
 width="200"
-    hspace="10" vspace="10">](/images/maps activity.jpeg)
+    hspace="10" vspace="10">]
 
 [<img src="/images/settings.jpeg" align="left"
 width="200"
