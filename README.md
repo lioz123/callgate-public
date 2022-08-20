@@ -47,13 +47,13 @@ On Android versions prior to Android 6.0, wallabag requires the following permis
 width="200"
     hspace="10" vspace="10">](/images/main.jpeg)
 
-[<img src="/images/maps activity.jpeg" align="left"
+<img src="/images/maps activity.jpeg" align="left"
 width="200"
-    hspace="10" vspace="10">]
+    hspace="10" vspace="10">
 
-[<img src="/images/settings.jpeg" align="left"
+<img src="/images/settings.jpeg" align="left"
 width="200"
-    hspace="10" vspace="10">](/images/settings.jpeg)
+    hspace="10" vspace="10">(/images/settings.jpeg)
 
 
 
