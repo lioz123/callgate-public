@@ -34,6 +34,14 @@ The android app lets you:
 - Support for English\Hebrew.
 - Switch between dark\light theme.
 
+## Permissions
+On Android versions prior to Android 6.0, wallabag requires the following permissions:
+- Full Network Access.
+- GPS
+- Phone calls
+- Readt\Write Contacts.
+
+
 ## Screenshots
 [<img src="/images/main.jpeg" align="left"
 width="200"
@@ -49,11 +57,4 @@ width="200"
 
 
 
-## Permissions
-
-On Android versions prior to Android 6.0, wallabag requires the following permissions:
-- Full Network Access.
-- GPS
-- Phone calls
-- Readt\Write Contacts.
 
