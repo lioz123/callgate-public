@@ -1,14 +1,14 @@
 # Callgate - Android App
 Callgate is self hosted app made for openning electrical gates.
-Unlike other apps, callgate automates oppening of gate using location and bluetooth connection without the user interaction.
+Unlike other apps, callgate automates oppening of gates using location and bluetooth connection without the user interaction.
 
 # about
 Callgate is written in kotlin using the android SDK.
 The code demonstrate the use of MVVM articture.
-This app is heavly depended on Background\Foreground services using the notification system, along side with Broadcast Recivers to trigger them.
+This app is depended on Background \ Foreground services using the notification system, along side with Broadcast Recivers.
 
-Inorder to set gate by location and time the user can select the location of the gate through google maps and choose the radios that he wants to open it.
-The algorithm of opening gate. when a user enter his car the app will trigger itself by bluetooth connection or manuly by the user, afterhand the app will calculate the appromixtly arrive time to the closest gate and will start asking for location upadates by that time inorder to save buttery life.
+Inorder to set gate by location the user can select the location of the gate through google maps and choose the radius that he wants to open it.
+Inorder to save buttery, the app will trigger itself by bluetooth connection or manuly by the user, afterhand the app will calculate the appromixtly arrive time to the closest gate and will start asking for location upadates by that time.
 
 
 
@@ -39,7 +39,7 @@ On Android versions prior to Android 6.0, wallabag requires the following permis
 - Full Network Access.
 - GPS
 - Phone calls
-- Readt\Write Contacts.
+- Read \ Write Contacts.
 
 
 ## Screenshots
