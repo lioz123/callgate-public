@@ -45,15 +45,15 @@ On Android versions prior to Android 6.0, wallabag requires the following permis
 ## Screenshots
 [<img src="/images/main.jpeg" align="left"
 width="200"
-    hspace="10" vspace="10">](/readme/Wallabag%20Reading%20List.png)
+    hspace="10" vspace="10">](/images/main.jpeg)
 
 [<img src="/images/maps activity.jpeg" align="left"
 width="200"
-    hspace="10" vspace="10">](/readme/Wallabag%20Reading%20List.png)
+    hspace="10" vspace="10">](/images/maps activity.jpeg)
 
 [<img src="/images/settings.jpeg" align="left"
 width="200"
-    hspace="10" vspace="10">](/readme/Wallabag%20Reading%20List.png)
+    hspace="10" vspace="10">](/images/settings.jpeg)
 
 
 
