@@ -34,6 +34,21 @@ The android app lets you:
 - Support for English\Hebrew.
 - Switch between dark\light theme.
 
+## Screenshots
+[<img src="/images/main.jpeg" align="left"
+width="200"
+    hspace="10" vspace="10">](/readme/Wallabag%20Reading%20List.png)
+
+[<img src="/images/maps activity.jpeg" align="left"
+width="200"
+    hspace="10" vspace="10">](/readme/Wallabag%20Reading%20List.png)
+
+[<img src="/images/settings.jpeg" align="left"
+width="200"
+    hspace="10" vspace="10">](/readme/Wallabag%20Reading%20List.png)
+
+
+
 ## Permissions
 
 On Android versions prior to Android 6.0, wallabag requires the following permissions:
