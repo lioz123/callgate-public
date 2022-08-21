@@ -1,15 +1,11 @@
 # Callgate - Android App
-Callgate is self hosted app made for openning electrical gates.
-Unlike other apps, callgate automates oppening of gates using location and bluetooth connection without the user interaction.
+Callgate is a self-hosted app designed for opening electric gates.
+Unlike other apps, callgate automates the opening of gates using tracking and Bluetooth connectivity without user intervention.
 
 # about
-Callgate is written in kotlin using the android SDK.
-The code demonstrate the use of MVVM articture.
-This app is depended on Background \ Foreground services using the notification system, along side with Broadcast Recivers.
+Callgate is written in Kotlin and uses the Android SDK. The code demonstrates the use of MVVM articture. This app depends on Background \ Foreground services with the notification system, along with broadcast recivers.
 
-Inorder to set gate by location the user can select the location of the gate through google maps and choose the radius that he wants to open it.
-Inorder to save buttery, the app will trigger itself by bluetooth connection or manuly by the user, afterhand the app will calculate the appromixtly arrive time to the closest gate and will start asking for location upadates by that time.
-
+To set the gate by location, the user can select the location of the gate via Google Maps and choose the radius in which to open it. To save time, the app triggers itself through a Bluetooth connection or manually by the user. After that, the app calculates the time to reach the nearest gate and asks for location updates at that time.
 
 
 
