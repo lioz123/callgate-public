@@ -22,13 +22,13 @@ To set the gate by location, the user can select the location of the gate via Go
 
 ## Features
 
-The android app lets you:
-- Open electrical gates based on your location.
-- Connect your car through bluetooth.
+With the Android app you can:
+- Open electric gates based on your location.
+- Connect your car via bluetooth.
 - Completely ad-free.
-- Share gates between users.
-- Support for English\Hebrew.
-- Switch between dark\light theme.
+- Share gates with other users.
+- Support for Englishand Hebrew.
+- Switch between darkand light themes.
 
 ## Permissions
 On Android versions prior to Android 6.0, wallabag requires the following permissions:
