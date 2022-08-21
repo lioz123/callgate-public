@@ -27,8 +27,8 @@ With the Android app you can:
 - Connect your car via bluetooth.
 - Completely ad-free.
 - Share gates with other users.
-- Support for Englishand Hebrew.
-- Switch between darkand light themes.
+- Support for English and Hebrew.
+- Switch between dark and light themes.
 
 ## Permissions
 On Android versions prior to Android 6.0, wallabag requires the following permissions:
